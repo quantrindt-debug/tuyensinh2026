@@ -1,10 +1,10 @@
 # Dự Án Quản Lý Hồ Sơ Học Sinh & Tuyển Sinh THPT
 
-Bộ mã nguồn mẫu đóng gói cho hệ thống **Quản lý hồ sơ học sinh / tuyển sinh**.
+Bộ mã nguồn mẫu đóng gói cho hệ thống **Quản lý thông báo / nhắn tin**.
 
 ## 📁 Cấu trúc thư mục:
 - `index.html`: Giao diện web quản lý và tra cứu hồ sơ.
-- `js/app.js`: Logic xử lý dữ liệu, tìm kiếm, lọc theo lớp.
+- `js/app.js`: Logic xử lý dữ liệu, quản lý thông báo học sinh.
 - `google-apps-script/Code.gs`: Mã nguồn Google Apps Script để kết nối với Google Sheets.
 
 ## 🚀 Hướng dẫn sử dụng:
