@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cổng Thông Tin Tuyển Sinh Lớp 10 - THPT Nguyễn Duy Trinh</title>
+  <!-- Sử dụng Tailwind CSS qua CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .font-school { font-family: 'Merriweather', serif; }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-slate-100 via-blue-50/30 to-slate-200 min-h-screen flex flex-col justify-between">
+
+  <!-- Cảnh báo khi mở qua Zalo / Facebook trên di động -->
+  <div id="zaloWarning" class="hidden bg-amber-500 text-slate-950 px-4 py-2.5 text-center text-xs font-bold shadow-md sticky top-0 z-50 flex items-center justify-center gap-2">
+    <span>⚠️ Bạn đang mở bằng trình duyệt Zalo/Facebook. Nếu gặp lỗi, hãy bấm vào dấu 3 chấm (...) góc phải và chọn "Mở bằng trình duyệt".</span>
+  </div>
+
+  <!-- Header Banner -->
+  <header class="bg-gradient-to-r from-blue-950 via-indigo-900 to-blue-900 text-white py-8 px-4 shadow-xl border-b-4 border-amber-400 relative overflow-hidden">
+    <div class="max-w-4xl mx-auto text-center space-y-2 relative z-10">
+      <h3 class="text-xs md:text-sm font-bold tracking-widest uppercase text-blue-200/90">
+        SỞ GIÁO DỤC VÀ ĐÀO TẠO NGHỆ AN
+      </h3>
+      <div class="text-2xl md:text-4xl font-school font-bold tracking-wide uppercase text-amber-300 drop-shadow-md">
+        TRƯỜNG THPT NGUYỄN DUY TRINH
+      </div>
+      <div class="w-20 h-0.5 bg-amber-400/80 mx-auto my-2 rounded-full"></div>
+      <p class="text-xs md:text-base text-blue-100 font-extrabold uppercase tracking-wider">
+        CỔNG THÔNG TIN TUYỂN SINH LỚP 10 (2026 - 2027)
+      </p>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto p-4 md:p-6 space-y-6 w-full my-auto">
+
+    <!-- KHU VỰC 4 NÚT ĐIỀU HƯỚNG (Thay link Apps Script thực tế của bạn vào các thuộc tính href bên dưới) -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      
+      <!-- Nút 1: Đăng ký Nhập học -->
+      <a href="https://script.google.com/macros/s/THAY_LINK_APPS_SCRIPT_CỦA_BẠN_VÀO_ĐÂY/exec?page=nhaphoc" target="_blank"
+         class="bg-white p-5 rounded-2xl shadow-md border border-slate-200 hover:border-blue-600 hover:shadow-lg transition group flex flex-col justify-between space-y-3">
+        <div class="flex items-center space-x-3">
+          <div class="w-12 h-12 bg-blue-50 text-blue-800 rounded-xl flex items-center justify-center text-2xl font-bold flex-shrink-0 group-hover:scale-110 transition">📝</div>
+          <div>
+            <span class="px-2 py-0.5 bg-blue-100 text-blue-900 text-[10px] font-bold rounded-md">ĐỢT 1</span>
+            <h2 class="text-sm font-bold text-slate-800 group-hover:text-blue-900 transition leading-snug mt-1">Xác Nhận Nhập Học Trực Tuyến</h2>
+          </div>
+        </div>
+        <p class="text-xs text-slate-500 leading-relaxed">Thí sinh trúng tuyển đợt 1 cập nhật thông tin từ 8h00 ngày 30/7/2026 đến 11h00 ngày 03/8/2026.</p>
+      </a>
+
+      <!-- Nút 2: Đăng ký Tổ hợp môn -->
+      <a href="https://script.google.com/macros/s/THAY_LINK_APPS_SCRIPT_CỦA_BẠN_VÀO_ĐÂY/exec?page=tohop" target="_blank"
+         class="bg-white p-5 rounded-2xl shadow-md border border-slate-200 hover:border-amber-500 hover:shadow-lg transition group flex flex-col justify-between space-y-3">
+        <div class="flex items-center space-x-3">
+          <div class="w-12 h-12 bg-amber-50 text-amber-700 rounded-xl flex items-center justify-center text-2xl font-bold flex-shrink-0 group-hover:scale-110 transition">📚</div>
+          <div>
+            <span class="px-2 py-0.5 bg-amber-100 text-amber-900 text-[10px] font-bold rounded-md">TỌA ĐÀM TƯ VẤN</span>
+            <h2 class="text-sm font-bold text-slate-800 group-hover:text-amber-800 transition leading-snug mt-1">Đăng Ký Tổ Hợp Môn Học</h2>
+          </div>
+        </div>
+        <p class="text-xs text-slate-500 leading-relaxed">Đăng ký nguyện vọng lựa chọn tổ hợp môn học sau khi tọa đàm trực tiếp tại trường sáng 9/8/2026.</p>
+      </a>
+
+      <!-- Nút 3: Tra cứu hồ sơ tổng hợp -->
+      <a href="https://script.google.com/macros/s/THAY_LINK_APPS_SCRIPT_CỦA_BẠN_VÀO_ĐÂY/exec?page=tracuuhoso" target="_blank"
+         class="bg-white p-5 rounded-2xl shadow-md border border-slate-200 hover:border-emerald-500 hover:shadow-lg transition group flex flex-col justify-between space-y-3">
+        <div class="flex items-center space-x-3">
+          <div class="w-12 h-12 bg-emerald-50 text-emerald-700 rounded-xl flex items-center justify-center text-2xl font-bold flex-shrink-0 group-hover:scale-110 transition">🔎</div>
+          <div>
+            <span class="px-2 py-0.5 bg-emerald-100 text-emerald-900 text-[10px] font-bold rounded-md">TRA CỨU ĐĂNG KÝ</span>
+            <h2 class="text-sm font-bold text-slate-800 group-hover:text-emerald-800 transition leading-snug mt-1">Tra Cứu Hồ Sơ Đã Đăng Ký</h2>
+          </div>
+        </div>
+        <p class="text-xs text-slate-500 leading-relaxed">Tra cứu kết quả xác nhận nhập học trực tuyến và xác nhận nguyện vọng tổ hợp môn học.</p>
+      </a>
+
+      <!-- Nút 4: Tra cứu lớp học -->
+      <a href="https://script.google.com/macros/s/THAY_LINK_APPS_SCRIPT_CỦA_BẠN_VÀO_ĐÂY/exec?page=tracuulophoc" target="_blank"
+         class="bg-white p-5 rounded-2xl shadow-md border border-slate-200 hover:border-indigo-500 hover:shadow-lg transition group flex flex-col justify-between space-y-3">
+        <div class="flex items-center space-x-3">
+          <div class="w-12 h-12 bg-indigo-50 text-indigo-700 rounded-xl flex items-center justify-center text-2xl font-bold flex-shrink-0 group-hover:scale-110 transition">🏫</div>
+          <div>
+            <span class="px-2 py-0.5 bg-indigo-100 text-indigo-900 text-[10px] font-bold rounded-md">PHÂN LỚP 10</span>
+            <h2 class="text-sm font-bold text-slate-800 group-hover:text-indigo-800 transition leading-snug mt-1">Tra Cứu Lớp Học Được Phân Công</h2>
+          </div>
+        </div>
+        <p class="text-xs text-slate-500 leading-relaxed">Tra cứu kết quả xếp lớp 10 năm học 2026 - 2027 bằng số báo danh và CCCD bảo mật.</p>
+      </a>
+
+    </div>
+
+    <!-- KHỐI LƯU Ý KHÓA CỔNG TỰ ĐỘNG -->
+    <div class="bg-amber-50/90 border-l-4 border-amber-500 p-3.5 rounded-r-xl text-xs space-y-1.5">
+      <div class="font-bold text-amber-900 flex items-center gap-1.5 text-sm">
+        <span>⚠️</span> LƯU Ý QUAN TRỌNG VỀ NHẬP HỌC TRỰC TUYẾN:
+      </div>
+      <ul class="list-disc list-inside text-amber-950 space-y-1 leading-relaxed pl-1">
+        <li>Hướng dẫn nhập học trực tuyến sẽ được đăng kèm cùng danh sách trúng tuyển từng đợt.</li>
+        <li>Học sinh trúng tuyển bắt buộc phải thực hiện <strong class="text-red-700 underline">XÁC NHẬN NHẬP HỌC TRỰC TUYẾN</strong> đúng thời hạn quy định.</li>
+        <li><strong>Sau thời gian trên:</strong> Hệ thống sẽ <strong class="text-red-700">TỰ ĐỘNG KHÓA</strong> và chuyển chỉ tiêu cho đợt xét tuyển tiếp theo.</li>
+      </ul>
+    </div>
+
+    <!-- THÔNG BÁO KÊNH THÔNG TIN CHÍNH THỨC -->
+    <div class="text-center bg-slate-50 p-3 rounded-xl border border-slate-200 text-xs text-slate-600">
+      💡 Mọi thông tin chi tiết và danh sách trúng tuyển từng đợt sẽ được cập nhật liên tục trên <strong>Fanpage chính thức</strong> và <strong>Website của Nhà trường</strong>.
+    </div>
+
+  </main>
+
+  <!-- Thông tin liên hệ nhà trường -->
+  <div class="bg-slate-50 border-t border-slate-200 p-5 text-center text-xs text-slate-600 space-y-1">
+    <p class="font-bold text-blue-950 text-sm uppercase">Trường THPT Nguyễn Duy Trinh</p>
+    <p class="text-slate-500">📍 Xóm Quán Hành 4, Xã Nghi Lộc, Nghệ An</p>
+    <div class="pt-1 flex flex-wrap justify-center gap-3 text-slate-600">
+      <p>📞 Điện thoại liên hệ: <a href="tel:0978929399" class="font-bold text-blue-700 hover:underline">0978 92 93 99</a> - <a href="tel:0915779656" class="font-bold text-blue-700 hover:underline">0915 779 656</a></p>
+      <p>✉️ Email: <a href="mailto:vanbanndt@nghean.edu.vn" class="font-medium text-slate-700">vanbanndt@nghean.edu.vn</a></p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 text-xs text-slate-500 border-t border-slate-200 bg-white/50 space-y-1">
+    <p>© Bản quyền thuộc về Lê Duy Hải - Trường THPT Nguyễn Duy Trinh</p>
+  </footer>
+
+  <script>
+    // Tự động phát hiện nếu mở bằng Zalo hoặc Facebook để hiện thanh cảnh báo
+    var ua = navigator.userAgent || navigator.vendor || window.opera;
+    if (ua.indexOf("Zalo") > -1 || ua.indexOf("FBAV") > -1 || ua.indexOf("FBAN") > -1) {
+      document.getElementById('zaloWarning').classList.remove('hidden');
+    }
+  </script>
+
+</body>
+</html>
